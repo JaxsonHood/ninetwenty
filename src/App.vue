@@ -1,24 +1,23 @@
 <template>
   <div id="app">
-    <Home msg="Welcome!!"/>
-    <div class="w-responsive text-center mx-auto p-3 mt-2">
-      <Card/>
+    <Home msg="Welcome!!" />
+    <div class="mx-auto w-responsive" style="max-width: 400px;">
+      <Card />
     </div>
   </div>
 </template>
 
 <script>
-
-import Home from './components/Home.vue'
-import Card from './components/Card.vue'
+import Home from "./components/Home.vue";
+import Card from "./components/Card.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Home,
     Card
   }
-}
+};
 </script>
 
 <style>
