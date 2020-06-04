@@ -19,7 +19,7 @@ app.get(/.*/, function(req, res) {
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
-    console.log("Connected to database " + process.env.MONGODB_URI.toString());
+    console.log("Connected to database ");
 });
 
 const port = process.env.PORT || 8080

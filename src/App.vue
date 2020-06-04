@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Home msg="Welcome to NineTwenty Studios"/>
+    <Home msg="Welcome!!"/>
   </div>
 </template>
 
