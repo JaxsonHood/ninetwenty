@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-
+  <div>
+    
     <mdb-navbar color="white" light>
       <mdb-navbar-brand href="https://mdbootstrap.com/">Navbar</mdb-navbar-brand>
       <mdb-navbar-toggler>
@@ -12,8 +12,10 @@
       </mdb-navbar-toggler>
     </mdb-navbar>
 
-    <Home msg="Welcome!!" />
-    
+    <div id="app">
+      <Home msg="Welcome!!" />
+    </div>
+
   </div>
 </template>
 
@@ -25,7 +27,7 @@ import {
   mdbNavbarBrand,
   mdbNavbarToggler,
   mdbNavbarNav,
-  mdbNavItem,
+  mdbNavItem
 } from "mdbvue";
 
 export default {
