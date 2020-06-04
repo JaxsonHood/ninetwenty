@@ -1,8 +1,8 @@
 <template>
   <div>
 
-    <mdb-navbar color="white" style="min-height:80px;" light>
-      <mdb-navbar-brand href="https://mdbootstrap.com/">Navbar</mdb-navbar-brand>
+    <mdb-navbar color="white" style="min-height:75px;" light>
+      <mdb-navbar-brand href="https://mdbootstrap.com/">NineTwenty</mdb-navbar-brand>
       <mdb-navbar-toggler>
         <mdb-navbar-nav>
           <mdb-nav-item href="#" active>Home</mdb-nav-item>

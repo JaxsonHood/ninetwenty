@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <img alt="Our logo-name" class="mx-auto w-responsive" src="../assets/logo-name.png" style="width:600px;" />
+    <img alt="Our logo-name" class="mx-auto w-responsive" src="../assets/logo-name.png" style="max-width:600px;" />
     <h1>{{ msg }}</h1>
     <div class="mx-auto w-responsive" style="max-width:400px; padding:20px;">
       <Card />
