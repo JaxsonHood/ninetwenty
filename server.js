@@ -6,7 +6,7 @@ const app = express()
 
 // connect Mongoose to your DB
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/ninetwenty');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/ninetwenty', { useNewUrlParser: true });
 
 //here we are configuring dist to serve app files
 app.use('/', serveStatic(path.join(__dirname, '/dist')))
@@ -15,6 +15,12 @@ app.use('/', serveStatic(path.join(__dirname, '/dist')))
 app.get(/.*/, function(req, res) {
     res.sendFile(path.join(__dirname, '/dist/index.html'))
 })
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+    console.log("Connected to database " + process.env.MONGODB_URI.toString());
+});
 
 const port = process.env.PORT || 8080
 app.listen(port)
