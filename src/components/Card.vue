@@ -1,5 +1,5 @@
 <template>
-	<mdb-card>
+	<mdb-card style="max-width:{{maxwidth}};">
 		<mdb-view hover>
 			<a href="#!">
 				<mdb-card-image
@@ -19,7 +19,10 @@
 <script>
 	import { mdbCard, mdbCardImage, mdbCardBody, mdbCardTitle, mdbCardText, mdbBtn, mdbView, mdbMask } from 'mdbvue';
 	export default {
-		name: 'Card',
+        name: 'Card',
+        props: {
+            maxwidth: Number
+        },
 		components: {
 			mdbCard,
 			mdbCardImage,
