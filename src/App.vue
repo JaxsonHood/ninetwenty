@@ -12,15 +12,20 @@
       </mdb-navbar-toggler>
     </mdb-navbar>
 
-    <div id="app">
+    <div id="app" style="padding:20px;">
       <Home msg="Welcome!!" />
+      <Blog/>
     </div>
+
+    <Footer/>
 
   </div>
 </template>
 
 <script>
 import Home from "./components/Home.vue";
+import Footer from "./components/Footer.vue"
+import Blog from "./components/Blog.vue"
 
 import {
   mdbNavbar,
@@ -34,6 +39,8 @@ export default {
   name: "App",
   components: {
     Home,
+    Footer,
+    Blog,
     mdbNavbar,
     mdbNavbarBrand,
     mdbNavbarToggler,

@@ -11,7 +11,7 @@
 		<mdb-card-body>
 			<mdb-card-title>Card with waves effect</mdb-card-title>
 			<mdb-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
-			<mdb-btn outline="white" size="md" icon="clone">View Item</mdb-btn>
+			<mdb-btn outline="black" size="md" icon="clone">View Item</mdb-btn>
 		</mdb-card-body>
 	</mdb-card>
 </template>
