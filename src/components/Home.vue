@@ -38,12 +38,12 @@ import {
   mdbNavbarToggler,
   mdbNavbarNav,
   mdbNavItem,
-  mdbDropdown,
-  mdbDropdownMenu,
-  mdbDropdownToggle,
-  mdbDropdownItem,
-  mdbInput,
-  mdbContainer
+  // mdbDropdown,
+  // mdbDropdownMenu,
+  // mdbDropdownToggle,
+  // mdbDropdownItem,
+  // mdbInput,
+  // mdbContainer
 } from "mdbvue";
 
 export default {
