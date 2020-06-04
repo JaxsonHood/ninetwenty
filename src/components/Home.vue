@@ -55,12 +55,12 @@ export default {
     mdbNavbarToggler,
     mdbNavbarNav,
     mdbNavItem,
-    mdbDropdown,
-    mdbDropdownMenu,
-    mdbDropdownToggle,
-    mdbDropdownItem,
-    mdbInput,
-    mdbContainer
+    // mdbDropdown,
+    // mdbDropdownMenu,
+    // mdbDropdownToggle,
+    // mdbDropdownItem,
+    // mdbInput,
+    // mdbContainer
   },
   props: {
     msg: String
