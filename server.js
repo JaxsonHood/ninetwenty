@@ -4,6 +4,10 @@ const path = require('path')
 
 const app = express()
 
+// connect Mongoose to your DB
+var mongoose = require('mongoose');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/ninetwenty');
+
 //here we are configuring dist to serve app files
 app.use('/', serveStatic(path.join(__dirname, '/dist')))
 
