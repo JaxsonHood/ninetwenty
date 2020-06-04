@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Home msg="Welcome!!"/>
-    <div style="width:50%;">
+    <div class="w-responsive text-center mx-auto p-3 mt-2">
       <Card/>
     </div>
   </div>
