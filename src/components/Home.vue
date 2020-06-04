@@ -33,7 +33,6 @@
 <script>
 import Card from "./Card.vue";
 import {
-  Card,
   mdbNavbar,
   mdbNavbarBrand,
   mdbNavbarToggler,
