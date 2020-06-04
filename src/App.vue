@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Home msg="Welcome!!" />
-    <div class="mx-auto w-responsive">
-      <Card maxwidth=400/>
+    <div class="mx-auto w-responsive" style="max-width:400px;">
+      <Card/>
     </div>
   </div>
 </template>
