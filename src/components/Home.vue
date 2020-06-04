@@ -1,10 +1,7 @@
 <template>
   <div class="hello">
-    
     <mdb-navbar color="white" light>
-      <mdb-navbar-brand href="https://mdbootstrap.com/">
-        Navbar
-      </mdb-navbar-brand>
+      <mdb-navbar-brand href="https://mdbootstrap.com/">Navbar</mdb-navbar-brand>
       <mdb-navbar-toggler>
         <mdb-navbar-nav>
           <mdb-nav-item href="#" active>Home</mdb-nav-item>
@@ -17,27 +14,41 @@
               <mdb-dropdown-item>Another action</mdb-dropdown-item>
               <mdb-dropdown-item>Something else here</mdb-dropdown-item>
             </mdb-dropdown-menu>
-          </mdb-dropdown> -->
+          </mdb-dropdown>-->
         </mdb-navbar-nav>
         <!-- <form>
           <mdb-input type="text" class="text-white" placeholder="Search" aria-label="Search" label navInput waves waves-fixed/>
-        </form> -->
+        </form>-->
       </mdb-navbar-toggler>
     </mdb-navbar>
 
-    <img alt="Our logo-name" src="../assets/logo-name.png" style="width:600px;">
+    <img alt="Our logo-name" src="../assets/logo-name.png" style="width:600px;" />
     <h1>{{ msg }}</h1>
     <div class="mx-auto w-responsive" style="max-width:400px; padding:20px;">
-      <Card/>
+      <Card />
     </div>
   </div>
 </template>
 
 <script>
 import Card from "./Card.vue";
+import {
+  Card,
+  mdbNavbar,
+  mdbNavbarBrand,
+  mdbNavbarToggler,
+  mdbNavbarNav,
+  mdbNavItem,
+  mdbDropdown,
+  mdbDropdownMenu,
+  mdbDropdownToggle,
+  mdbDropdownItem,
+  mdbInput,
+  mdbContainer
+} from "mdbvue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     Card,
     mdbNavbar,
@@ -55,7 +66,7 @@ export default {
   props: {
     msg: String
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
