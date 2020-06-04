@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Home msg="Welcome!!"/>
-    <Card/>
+    <div style="width:50%;">
+      <Card/>
+    </div>
   </div>
 </template>
 
