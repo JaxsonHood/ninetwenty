@@ -2,9 +2,6 @@
   <div class="hello">
     <img alt="Our logo-name" class="mx-auto w-responsive" src="../assets/logo-name.png" style="max-width:600px;" />
     <h1>{{ msg }}</h1>
-    <div class="mx-auto w-responsive" style="max-width:400px; padding:20px;">
-      <Card />
-    </div>
 
     <mdb-card class="card-image mx-auto w-responsive r-pad" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg); width:75%;">
       <div class="text-white text-center py-5 px-4 my-5">
@@ -21,19 +18,20 @@
 </template>
 
 <script>
-import Card from "./Card.vue";
 import { mdbCard, mdbBtn } from 'mdbvue';
 
 export default {
   name: "Home",
   components: {
-    Card,
     mdbCard,
     mdbBtn
   },
   props: {
     msg: String
-  }
+  },
+  data: {
+    'name': "Jaxson"
+  },
 };
 </script>
 

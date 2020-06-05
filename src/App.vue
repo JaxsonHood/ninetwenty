@@ -14,7 +14,6 @@
 
     <div id="app" style="padding:20px;">
       <Home msg="Welcome!!" />
-      <Blog/>
     </div>
 
     <Footer/>
@@ -25,7 +24,6 @@
 <script>
 import Home from "./components/Home.vue";
 import Footer from "./components/Footer.vue"
-import Blog from "./components/Blog.vue"
 
 import {
   mdbNavbar,
@@ -40,7 +38,6 @@ export default {
   components: {
     Home,
     Footer,
-    Blog,
     mdbNavbar,
     mdbNavbarBrand,
     mdbNavbarToggler,
