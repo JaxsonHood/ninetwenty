@@ -29,8 +29,8 @@ export default {
   props: {
     msg: String
   },
-  data: {
-    'name': "Jaxson"
+  data() {
+    return {'name': "Jaxson"};
   },
 };
 </script>

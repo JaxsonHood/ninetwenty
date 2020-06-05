@@ -5,15 +5,19 @@
       <mdb-navbar-brand href="https://mdbootstrap.com/">NineTwenty</mdb-navbar-brand>
       <mdb-navbar-toggler>
         <mdb-navbar-nav>
-          <mdb-nav-item href="#" active>Home</mdb-nav-item>
-          <mdb-nav-item href="#">About</mdb-nav-item>
-          <mdb-nav-item href="#">Contact</mdb-nav-item>
+          <mdb-nav-item href='/home' active>Home</mdb-nav-item>
+          <mdb-nav-item href='/about' >About</mdb-nav-item>
+          <mdb-nav-item href='/contact' >Contact</mdb-nav-item>
         </mdb-navbar-nav>
       </mdb-navbar-toggler>
     </mdb-navbar>
 
     <div id="app" style="padding:20px;">
-      <Home msg="Welcome!!" />
+
+      <div id='home' v-if="currentPath === '/home' || currentPath === '/'">
+        <Home msg="Welcome!!" />
+      </div>
+      
     </div>
 
     <Footer/>
@@ -43,6 +47,9 @@ export default {
     mdbNavbarToggler,
     mdbNavbarNav,
     mdbNavItem
+  },
+  data () {
+    return {'currentPath': window.location.pathname}
   }
 };
 </script>
