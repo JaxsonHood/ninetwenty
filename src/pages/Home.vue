@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <img alt="Our logo-name" class="mx-auto w-responsive" src="../assets/logo-name.png" style="max-width:600px;" />
+    <img alt="Our logo-name" class="mx-auto w-responsive" src="logo-name.png" style="max-width:600px;" />
     <h1>{{ msg }}</h1>
 
     <mdb-card class="card-image mx-auto w-responsive r-pad" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg); width:75%;">

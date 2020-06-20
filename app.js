@@ -4,6 +4,8 @@ const path = require('path')
 
 const app = express()
 
+app.use(express.static("public"));
+
 // connect Mongoose to your DB
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/ninetwenty', { useNewUrlParser: true });
