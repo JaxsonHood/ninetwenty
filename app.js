@@ -18,6 +18,10 @@ app.get(/.*/, function(req, res) {
     res.sendFile(path.join(__dirname, '/dist/index.html'))
 })
 
+app.get('/', function(req, res) {
+    res.redirect('/home');
+})
+
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
