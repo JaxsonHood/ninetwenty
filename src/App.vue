@@ -1,66 +1,42 @@
 <template>
-  <div>
+  <v-app>
+    <v-card color="grey lighten-4" flat height="200px" tile>
+      <v-toolbar extended>
+        <v-toolbar-title large>CMXX</v-toolbar-title>
 
-    <mdb-navbar color="white" style="min-height:75px;" light>
-      <mdb-navbar-brand href="https://mdbootstrap.com/">NineTwenty</mdb-navbar-brand>
-      <mdb-navbar-toggler>
-        <mdb-navbar-nav>
-          <mdb-nav-item href='/home' active>Home</mdb-nav-item>
-          <mdb-nav-item href='/about' >About</mdb-nav-item>
-          <mdb-nav-item href='/contact' >Contact</mdb-nav-item>
-        </mdb-navbar-nav>
-      </mdb-navbar-toggler>
-    </mdb-navbar>
+        <v-spacer></v-spacer>
 
-    <div id="app" style="padding:20px;">
+        <v-btn text large href="/home">Home</v-btn>
+        <v-btn text large href="/about">About</v-btn>
+<!-- 
+        <v-btn icon>
+          <v-icon>mdi-magnify</v-icon>
+        </v-btn>
 
-      <div id='home' v-if="currentPath === '/home' || currentPath === '/'">
-        <Home msg="Welcome!!" />
-      </div>
-      
-    </div>
+        <v-btn icon>
+          <v-icon>mdi-heart</v-icon>
+        </v-btn>
 
-    <Footer/>
+        <v-btn icon>
+          <v-icon>mdi-dots-vertical</v-icon>
+        </v-btn> -->
+      </v-toolbar>
+    </v-card>
 
-  </div>
+    <v-content>
+      <router-view />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import Home from "./pages/Home.vue";
-import Footer from "./components/Footer.vue"
-
-import {
-  mdbNavbar,
-  mdbNavbarBrand,
-  mdbNavbarToggler,
-  mdbNavbarNav,
-  mdbNavItem
-} from "mdbvue";
-
 export default {
   name: "App",
-  components: {
-    Home,
-    Footer,
-    mdbNavbar,
-    mdbNavbarBrand,
-    mdbNavbarToggler,
-    mdbNavbarNav,
-    mdbNavItem
-  },
-  data () {
-    return {'currentPath': window.location.pathname}
+  components: {},
+  data() {
+    return {
+      //
+    };
   }
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

@@ -1,4 +1,4 @@
-# ninetwenty
+# cmxx
 
 ## Project setup
 ```

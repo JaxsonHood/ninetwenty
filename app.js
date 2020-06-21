@@ -4,8 +4,6 @@ const path = require('path')
 
 const app = express()
 
-app.use(express.static("public"));
-
 // connect Mongoose to your DB
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/ninetwenty', { useNewUrlParser: true });
@@ -16,10 +14,6 @@ app.use('/', serveStatic(path.join(__dirname, '/dist')))
 // this * route is to serve project on different page routes except root `/`
 app.get(/.*/, function(req, res) {
     res.sendFile(path.join(__dirname, '/dist/index.html'))
-})
-
-app.get('/', function(req, res) {
-    res.redirect('/home');
 })
 
 var db = mongoose.connection;
