@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <Carousel/>
+    <div style="max-width:600px;">
+      <Carousel/>
+    </div>
   </div>
 </template>
 

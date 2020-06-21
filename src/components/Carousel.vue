@@ -19,6 +19,7 @@
           justify="center"
         >
           <div class="display-3">{{ slide }} Slide</div>
+          <v-img contain :src="require('../assets/hooder.png')"></v-img>
         </v-row>
       </v-sheet>
     </v-carousel-item>
