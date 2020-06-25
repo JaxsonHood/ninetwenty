@@ -19,7 +19,7 @@
           justify="center"
         >
           <div class="display-3">{{ slide }} Slide</div>
-          <v-img contain :src="require('../assets/hooder.png')"></v-img>
+          <v-img contain :src="img"></v-img>
         </v-row>
       </v-sheet>
     </v-carousel-item>
@@ -27,6 +27,9 @@
 </template>
 
 <script>
+
+var hooder = require('../assets/hooder.png');
+
   export default {
     name: 'Carousel',
     data () {
@@ -45,6 +48,7 @@
           'Fourth',
           'Fifth',
         ],
+        img: hooder
       }
     },
   }
