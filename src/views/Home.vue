@@ -4,7 +4,9 @@
     <div style="height:20px;"></div>
     <Form/>
     <div style="height:20px;"></div>
-    <Stepper/>
+    <Blog/>
+    <div style="height:40px;"></div>
+    <Gallery/>
     <div style="height:40px;"></div>
   </div>
 </template>
@@ -13,7 +15,8 @@
 // @ is an alias to /src
 import Carousel from '@/components/Carousel.vue'
 import Form from '@/components/Form.vue'
-import Stepper from '@/components/Stepper.vue'
+import Blog from '@/components/Blog.vue'
+import Gallery from '@/components/Gallery.vue'
 
 
 export default {
@@ -21,7 +24,8 @@ export default {
   components: {
     Carousel,
     Form,
-    Stepper
+    Blog,
+    Gallery
   }
 }
 </script>
