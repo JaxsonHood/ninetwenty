@@ -6,6 +6,11 @@
     tile
   >
     <v-toolbar>
+      <v-toolbar-items>
+        <v-btn icon class="align-self-start" size="28" href="/home">
+          <v-icon :color="black">mdi-vector-intersection</v-icon>
+        </v-btn>
+      </v-toolbar-items>
       <v-toolbar-title>CMXX</v-toolbar-title>
 
       <v-spacer></v-spacer>
