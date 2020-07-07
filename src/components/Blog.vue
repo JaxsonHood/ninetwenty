@@ -56,6 +56,11 @@ export default {
         src: "https://picsum.photos/600/400",
         text: "Time to Dance",
         title: "PARTYROCK"
+      },
+      {
+        src: "https://picsum.photos/600/400",
+        text: "Big Time",
+        title: "HELLO"
       }
     ]
   })

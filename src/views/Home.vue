@@ -1,6 +1,6 @@
 <template>
   <div class="home mx-auto" style="max-width:1000px;">
-    <Carousel/>
+    <Chart/>
     <div style="height:20px;"></div>
     <Form/>
     <div style="height:20px;"></div>
@@ -13,7 +13,8 @@
 
 <script>
 // @ is an alias to /src
-import Carousel from '@/components/Carousel.vue'
+//import Carousel from '@/components/Carousel.vue'
+import Chart from '@/components/Chart.vue'
 import Form from '@/components/Form.vue'
 import Blog from '@/components/Blog.vue'
 import Gallery from '@/components/Gallery.vue'
@@ -22,7 +23,7 @@ import Gallery from '@/components/Gallery.vue'
 export default {
   name: 'Home',
   components: {
-    Carousel,
+    Chart,
     Form,
     Blog,
     Gallery
